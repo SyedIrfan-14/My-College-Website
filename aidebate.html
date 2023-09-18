@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhigyan 2k23</title>
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+  <section id="header">
+    <img src="images/srmlogobg.png" alt="SRM VDP logo" id="logo">
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="event.html" class="activation">Event List</a></li>
+        <li><a href="previous.html">Previous Edition</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <a href="#" id="close"><i class="fa-sharp fa-solid fa-xmark"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+  </section>
+  <div class="inner-event">
+    <p class="innerevcont">
+      AI Debate
+    </p>
+    <div class="inner-poster">
+      <img src="images/AI debate.jpg" alt="" class="inner-img">
+    </div>
+    <div class="inner-cont">
+      <p class="innercont-p">
+        An AI debate involves a structured and often spirited discussion on various aspects of artificial intelligence
+        (AI), its impacts, ethics, implications, and future developments
+      </p>
+      <p class="innercont-p">
+        AI Debate Rules and Regulations:
+      </p>
+      <p class="innercont-p">
+        1. Topic Selection and Preparation
+        - Topics will be provided on the spot.
+        - Participants are allowed to use AI tools for research and preparation within the given time limit.
+      </p>
+      <p class="innercont-p">
+        2. Opening Statements
+        - Each participant's opening statement is limited to a maximum of 2 minutes.
+      </p>
+      <p class="innercont-p">
+        3. Rebuttals
+        - The rebuttal phase will last for one hour.
+        - Participants can engage in back-and-forth discussions during this time.
+      </p>
+      <p class="innercont-p">
+        4. Cross Examination
+        - Cross examination will occur after the rebuttal phase and will be limited to 10 minutes.
+      </p>
+      <p class="innercont-p">
+        5. Closing Statements
+        - The maximum time limit for closing statements is 2 minutes per participant.
+      </p>
+      <p class="innercont-p">
+        6. Internet Usage
+        - The use of the internet is prohibited once the debate starts.
+      </p>
+      <p class="innercont-p">
+        Judging Criteria
+      </p>
+      <p class="innercont-p">
+        - Judges will evaluate participants based on the following criteria:
+        1. Clarity and Presentation: The clarity of arguments and the ability to present them effectively.
+        2. Logical Reasoning: The use of sound logic and evidence to support arguments.
+        3. Relevance: The relevance of arguments and points to the given topic.
+        4. Respectful Engagement: The ability to engage in respectful and constructive debates.
+        5. Counter-arguments: The effectiveness of counter-arguments during rebuttals.
+        6. Cross Examination: Performance during the cross-examination phase.
+        7. Closing Statements: The strength and impact of closing statements.
+        8. Adherence to Rules: Participants' adherence to the established debate rules and time limits.
+      </p>
+      <p class="date">Date: 22nd september</p>
+      <p class="venue">Venue: VLSI lab</p>
+      <p class="time">Time: 9:30 AM - 12:30 PM</p>
+      <a href="https://forms.gle/mHnsm4ruUZcAJbfk9" target="_blank"><button class="register">Register Now</button></a>
+    </div>
+  </div>
+  <script>
+    const bar = document.getElementById('bar');
+    const close = document.getElementById('close');
+    const nav = document.getElementById('navbar');
+
+    if (bar) {
+      bar.addEventListener('click', () => {
+        nav.classList.add('activation');
+      })
+    }
+
+    if (close) {
+      close.addEventListener('click', () => {
+        nav.classList.remove('activation');
+      })
+    }
+  </script>
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    });
+
+    ScrollReveal().reveal('.innerevcont', { delay: 200, origin: 'top' });
+    ScrollReveal().reveal('.inner-poster .inner-img', { delay: 200, origin: 'left' });
+    ScrollReveal().reveal('.inner-cont', { delay: 200, origin: 'bottom' });
+  </script>
+</body>
+
+</html>
